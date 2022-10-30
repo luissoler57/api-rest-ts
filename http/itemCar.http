@@ -1,0 +1,44 @@
+### *ENV
+@api = http://localhost:3000
+@id = 635ef03be1e2eb2f17876f72
+@Authorization = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNWVjZjY3MTFkZWVlMTRjOWVlZDdmZiIsImlhdCI6MTY2NzE2NjI1MCwiZXhwIjoxNjY3MTczNDUwfQ.DXFO4Py-OnCLSoRUuYUAAYptxO6NGMoDbYHI_xHUE-M
+
+### * Get Items
+GET {{api}}/item
+Authorization:{{Authorization}}
+
+### * Save Item
+POST {{api}}/item
+Content-Type: application/json
+Authorization:{{Authorization}}
+
+{
+  "name": "Model asdada",
+  "color": "red",
+  "gas": "electric",
+  "year": 2023,
+  "price": 5200
+}
+
+### * Get Item [id Required]
+GET {{api}}/item/{{id}}/details
+Authorization:{{Authorization}}
+
+
+
+### * Update Item  [id Required]
+PUT {{api}}/item/{{id}}/edit
+Content-Type: application/json
+Authorization:{{Authorization}}
+
+{
+  "name": "Model update",
+  "color": "red",
+  "gas": "electric",
+  "year": 2023,
+  "price": 5200
+}
+
+### * Delete Item  [id Required]
+DELETE  {{api}}/item/{{id}}/delete
+Authorization:{{Authorization}}

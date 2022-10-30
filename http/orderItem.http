@@ -1,0 +1,6 @@
+@api = http://localhost:3000
+@Authorization = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNWVjZjY3MTFkZWVlMTRjOWVlZDdmZiIsImlhdCI6MTY2NzE2MTQzNiwiZXhwIjoxNjY3MTY4NjM2fQ.mGexEoelefLuMe84-mbkJCGHlbrkRpMmPZP8gz51Qh4
+
+### Get Items
+GET {{api}}/order
+Authorization:{{Authorization}}
